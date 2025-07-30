@@ -10,6 +10,6 @@ describe('Task Priority', () => {
     test('should reject invalid priority', () => {
         const task = new Task('Test', 'Description');
         expect(task.setPriority('invalid')).toBe(false);
-        expect(task.priority).toBe('medium'); // default
+        expect(task.priority).toBe('medium'); // remains default
     });
 });
